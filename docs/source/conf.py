@@ -26,3 +26,10 @@ exclude_patterns = []
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+html_context = {
+	'display_github': True,
+	'github_user': 'Yeong-Jun-Park',
+	'github_repo': 'test',
+	'github_version': 'main/docs/source/',
+}
