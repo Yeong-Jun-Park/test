@@ -1,0 +1,98 @@
+/* Dark theme */
+:root {
+  --sl-color-accent-low: #083b3b;
+  --sl-color-accent: #20b8a6;
+  --sl-color-accent-high: #a5f3e6;
+  --sl-font: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Light theme */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d9f5ef;
+  --sl-color-accent: #087f73;
+  --sl-color-accent-high: #064e47;
+}
+
+/* Site title */
+.site-title {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+/* Homepage hero */
+.hero {
+  padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.hero h1 {
+  max-width: 12ch;
+  font-size: clamp(3.2rem, 8vw, 6rem);
+  line-height: 1.04;
+  letter-spacing: -0.065em;
+}
+
+.hero .tagline {
+  max-width: 38rem;
+  line-height: 1.8;
+}
+
+.hero .actions a {
+  border-radius: 999px;
+}
+
+/* Homepage sections */
+.home-intro,
+.home-note {
+  margin-block: 3rem 2rem;
+}
+
+.eyebrow {
+  color: var(--sl-color-text-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.home-intro h2,
+.home-note h2 {
+  margin-top: 0.8rem;
+  font-size: clamp(1.65rem, 3vw, 2.3rem);
+  letter-spacing: -0.035em;
+}
+
+.home-intro p,
+.home-note p {
+  max-width: 46rem;
+  color: var(--sl-color-gray-2);
+  line-height: 1.85;
+}
+
+.home-note {
+  padding: 2rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 1.25rem;
+  background: var(--sl-color-accent-low);
+}
+
+/* Module cards */
+.card-grid .card {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 28px rgb(0 0 0 / 4%);
+}
+
+.card-grid .card:nth-child(1) {
+  border-top: 3px solid #14b8a6;
+}
+
+.card-grid .card:nth-child(2) {
+  border-top: 3px solid #60a5fa;
+}
+
+.card-grid .card:nth-child(3) {
+  border-top: 3px solid #a78bfa;
+}
+
+.card-grid .card:nth-child(4) {
+  border-top: 3px solid #f0b45b;
+}

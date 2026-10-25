@@ -1,0 +1,66 @@
+---
+title: FuNPrep
+description: Multimodal neuroimaging preprocessing and feature extraction.
+template: splash
+hero:
+  title: Your images.<br />Connected.
+  tagline: Process structural, diffusion, functional, and microstructural MRI with a modular neuroimaging pipeline.
+  actions:
+    - text: Get started
+      link: ./getting-started/installation/
+      icon: right-arrow
+      variant: primary
+    - text: Explore the pipeline
+      link: ./overview/
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<div className="home-intro">
+  <span className="eyebrow">FOUR MODALITIES · ONE WORKFLOW</span>
+  <h2>From MRI to surfaces, profiles, and connectomes.</h2>
+  <p>
+    FuNPrep brings modality-specific processing into a shared workflow,
+    with subject-level outputs for downstream neuroimaging research.
+  </p>
+</div>
+
+<CardGrid>
+  <Card title="Structural MRI">
+    Prepare T1-weighted images, reconstruct cortical surfaces, and
+    transform surfaces and metrics into fsLR space.
+  </Card>
+
+  <Card title="Diffusion MRI">
+    Process diffusion images, estimate diffusion metrics, perform
+    tractography, and construct structural connectomes.
+  </Card>
+
+  <Card title="Functional MRI">
+    Process and denoise fMRI data, project signals onto cortical
+    surfaces, and construct functional connectomes.
+  </Card>
+
+  <Card title="Microstructure">
+    Sample intracortical image profiles and derive regional profile
+    features and microstructural profile covariance.
+  </Card>
+</CardGrid>
+
+<div className="home-note">
+  <span className="eyebrow">BUILT AROUND YOUR ANALYSIS</span>
+  <h2>Choose the modules your study needs.</h2>
+  <p>
+    Begin with anatomical processing, then follow the workflows relevant
+    to your available modalities. Consult each workflow for its required
+    inputs and anatomical dependencies.
+  </p>
+</div>
+
+## Detailed guides
+
+- [Structural MRI](./structural/)
+- [Diffusion MRI](./diffusion/)
+- [Functional MRI](./functional/)
+- [Microstructure](./microstructure/)
